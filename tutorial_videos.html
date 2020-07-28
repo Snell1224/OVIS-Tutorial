@@ -4,9 +4,8 @@
 <head>
 <style>
 function selectVideo(var videoName) {
-	window.onload = function() {
-   localStorage.setItem("Name",videoName);
-		}
+	document.location.href = videoName;
+	localStorage.setItem("Name",videoName);
 	}
 /* unvisited link */
 a:link {
