@@ -4,15 +4,10 @@
 <head>
 <style>
 function selectVideo(var videoName) {
-	<html>
-	<h1>LDMSD v4 Basics Tutorial Video videoName </h1>
-	<video width="1858" height="628" controls >
-	<source src="https://github.com/Snell1224/OVIS-Tutorial/blob/LDMSDv4-Tutorial-Videos/"+ videoName + ".mp4?raw=true" type="video/mp4">
-	</video>
-	</html>
-	
+	window.onload = function() {
+   localStorage.setItem("Name",videoName);
 		}
-	}	
+	}
 /* unvisited link */
 a:link {
   color: blue;
@@ -39,9 +34,9 @@ a:active {
 	
 <body>
 <h2>List of Tutorial Videos for LDMSDv4 Basics</h2>
-  <a href="#" target="_blank" onclick="selectVideo("start-check-ldmsd-cap")">Start and Check and LDMSD daemon</a>
+  <a href="https://snell1224.github.io/OVIS-Tutorial/start-check-ldmsd-daemon-cap.html" target="_blank" onclick="selectVideo("start-check-ldmsd-cap")">Start and Check and LDMSD daemon</a>
 	<br>
-  <a href="#" target="_blank" onclick="selectVideo("verify-environment")">Verify Environment Variables</a>
+  <a href="https://snell1224.github.io/OVIS-Tutorial/start-check-ldmsd-daemon-cap.html" target="_blank" onclick="selectVideo("verify-environment")">Verify Environment Variables</a>
 
 </body>
 
