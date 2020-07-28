@@ -3,9 +3,10 @@
 
 <head>
 <style>
+	
 /* unvisited link */
 a:link {
-  color: green;
+  color: blue;
 }
 
 /* visited link */
@@ -23,11 +24,32 @@ a:active {
   color: yellow;
 } 
 </style>
+	
+	
 </head>
 	
 <body>
-	<h2>List of Tutorial Videos for LDMSDv4 Basics</h2>
-  <a href="https://snell1224.github.io/OVIS-Tutorial/start-check-ldmsd-daemon-cap.html" target="_blank">Start and Check and LDMSD daemon</a>
+<h2>List of Tutorial Videos for LDMSDv4 Basics</h2>
+  <a href="https://snell1224.github.io/OVIS-Tutorial/start-check-ldmsd-daemon-cap.html" target="_blank" onclick="selectVideo('1')">Start and Check and LDMSD daemon</a>
 	<br>
-  <a href="https://snell1224.github.io/OVIS-Tutorial/verify-env.html" target="_blank">Verify Environment Variables</a>
+  <a href="https://snell1224.github.io/OVIS-Tutorial/verify-env.html" target="_blank" onclick="selectVideo('2')">Verify Environment Variables</a>
+
+</body>
+
+function selectVideo(var video) {
+	switch(expression) {
+		  case 1:
+		<video width="1858" height="628" controls >
+		<source src="https://github.com/Snell1224/OVIS-Tutorial/blob/LDMSDv4-Tutorial-Videos/start-check-ldmsd-daemon-cap.mp4?raw=true" type="video/mp4">
+		</video>
+		    break;
+		  case 2:
+		<video width="1858" height="628" controls >
+		<source src="https://github.com/Snell1224/OVIS-Tutorial/blob/LDMSDv4-Tutorial-Videos/verify-environment-cap.mp4?raw=true" type="video/mp4">
+		</video>
+		    break;
+		  case 3:
+		    // code block
+		}
+	}
 
